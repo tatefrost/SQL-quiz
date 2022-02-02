@@ -205,7 +205,8 @@ class Database():
     def connect():
         """Connect to DB and return cursor."""
 
-        conn = psycopg2.connect(dbname="quiz", user="postgres", password="FreightTost96")
+        ## ENTER PASSWORD TO RUN SCRIPT!!! Stars are to hide my password
+        conn = psycopg2.connect(dbname="quiz", user="postgres", password="***")
         conn.autocommit = True
         cursor = conn.cursor()
         return (cursor, conn)
